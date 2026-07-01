@@ -1,0 +1,1594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPSC Essay Anecdotes (2024 - 2025)</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0d0e12;
+            --card-bg: rgba(22, 24, 33, 0.7);
+            --border-color: rgba(255, 255, 255, 0.08);
+            --text-primary: #f3f4f6;
+            --text-secondary: #9ca3af;
+            --accent-primary: #6366f1;
+            /* Indigo */
+            --accent-secondary: #a855f7;
+            /* Purple */
+            --accent-gradient: linear-gradient(135deg, #6366f1, #a855f7);
+            --card-hover-border: rgba(99, 102, 241, 0.4);
+            --badge-bg: rgba(99, 102, 241, 0.15);
+            --badge-text: #c7d2fe;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+            background-image:
+                radial-gradient(circle at 10% 20%, rgba(99, 102, 241, 0.05) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(168, 85, 247, 0.05) 0%, transparent 40%);
+            background-attachment: fixed;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 700;
+        }
+
+        /* App Layout */
+        .app-container {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        /* Sidebar styling */
+        .sidebar {
+            width: 320px;
+            background: rgba(13, 14, 18, 0.95);
+            border-right: 1px solid var(--border-color);
+            padding: 2rem 1.5rem;
+            position: fixed;
+            height: 100vh;
+            overflow-y: auto;
+            z-index: 10;
+            backdrop-filter: blur(10px);
+        }
+
+        .logo-area {
+            margin-bottom: 2.5rem;
+        }
+
+        .logo-area h2 {
+            font-size: 1.5rem;
+            background: var(--accent-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: -0.5px;
+        }
+
+        .logo-sub {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-top: 0.25rem;
+        }
+
+        .search-container {
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            color: var(--text-primary);
+            font-family: 'Inter', sans-serif;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: var(--accent-primary);
+            box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .nav-menu {
+            list-style: none;
+        }
+
+        .nav-section-title {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 0.75rem;
+            margin-top: 1.5rem;
+            font-weight: 600;
+        }
+
+        .nav-item a {
+            display: block;
+            padding: 0.6rem 1rem;
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+            margin-bottom: 0.25rem;
+            border-left: 2px solid transparent;
+        }
+
+        .nav-item a:hover {
+            color: var(--text-primary);
+            background: rgba(255, 255, 255, 0.03);
+            border-left-color: var(--accent-secondary);
+        }
+
+        .nav-item.active a {
+            color: #fff;
+            background: rgba(99, 102, 241, 0.1);
+            border-left-color: var(--accent-primary);
+            font-weight: 500;
+        }
+
+        /* Main Content styling */
+        .main-content {
+            margin-left: 320px;
+            flex-grow: 1;
+            padding: 3rem 4rem;
+            max-width: 1200px;
+        }
+
+        header {
+            margin-bottom: 3.5rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 2rem;
+        }
+
+        .header-title {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            letter-spacing: -1px;
+            background: linear-gradient(to right, #ffffff, #d1d5db);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .header-desc {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            max-width: 800px;
+        }
+
+        .year-section {
+            margin-bottom: 4.5rem;
+            scroll-margin-top: 2rem;
+        }
+
+        .year-title {
+            font-size: 1.8rem;
+            color: var(--text-primary);
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            border-left: 4px solid var(--accent-primary);
+            padding-left: 1rem;
+        }
+
+        .section-divider-title {
+            font-size: 1.2rem;
+            color: var(--accent-secondary);
+            margin: 2rem 0 1rem 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 600;
+        }
+
+        /* Card styling */
+        .anec-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .anec-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: var(--accent-gradient);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .anec-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--card-hover-border);
+            box-shadow: 0 12px 30px rgba(99, 102, 241, 0.15);
+        }
+
+        .anec-card:hover::before {
+            opacity: 1;
+        }
+
+        .card-header {
+            margin-bottom: 1.25rem;
+        }
+
+        .card-number {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--accent-primary);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .card-question {
+            font-size: 1.3rem;
+            color: #fff;
+            margin-bottom: 1rem;
+            line-height: 1.4;
+        }
+
+        .highlight-val {
+            text-decoration: underline;
+            text-underline-offset: 4px;
+            text-decoration-color: var(--accent-secondary);
+            text-decoration-thickness: 2px;
+        }
+
+        /* Badges */
+        .badge-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .badge {
+            background: var(--badge-bg);
+            color: var(--badge-text);
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border: 1px solid rgba(99, 102, 241, 0.2);
+        }
+
+        .badge.history-world {
+            border-color: rgba(245, 158, 11, 0.4);
+            background: rgba(245, 158, 11, 0.1);
+            color: #f59e0b;
+        }
+
+        .badge.history-india {
+            border-color: rgba(16, 185, 129, 0.4);
+            background: rgba(16, 185, 129, 0.1);
+            color: #10b981;
+        }
+
+        .badge.philosophy {
+            border-color: rgba(59, 130, 246, 0.4);
+            background: rgba(59, 130, 246, 0.1);
+            color: #3b82f6;
+        }
+
+        .badge.bhakti-sufi {
+            border-color: rgba(236, 72, 153, 0.4);
+            background: rgba(236, 72, 153, 0.1);
+            color: #ec4899;
+        }
+
+        /* Story layout */
+        .story-section {
+            background: rgba(255, 255, 255, 0.02);
+            border-left: 3px solid rgba(255, 255, 255, 0.1);
+            padding: 1.25rem 1.5rem;
+            border-radius: 0 8px 8px 0;
+            margin-bottom: 1.5rem;
+        }
+
+        .story-title {
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-primary);
+            margin-bottom: 0.75rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .story-content {
+            font-size: 0.95rem;
+            color: #d1d5db;
+            text-align: justify;
+        }
+
+        .story-content p {
+            margin-bottom: 0.85rem;
+        }
+
+        .story-content p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Interactive Accordion elements */
+        .interactive-section {
+            border-top: 1px solid var(--border-color);
+            padding-top: 1rem;
+            margin-top: 1rem;
+        }
+
+        .accordion-btn {
+            background: none;
+            border: none;
+            color: var(--text-secondary);
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            padding: 0.5rem 0;
+            text-align: left;
+            transition: color 0.2s ease;
+        }
+
+        .accordion-btn:hover {
+            color: var(--text-primary);
+        }
+
+        .accordion-btn::after {
+            content: '+';
+            font-size: 1.2rem;
+            transition: transform 0.3s ease;
+        }
+
+        .accordion-btn.open::after {
+            content: '−';
+        }
+
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            padding-left: 0.5rem;
+        }
+
+        .accordion-content.show {
+            max-height: 500px;
+            margin-top: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .pivot-text {
+            background: rgba(99, 102, 241, 0.05);
+            border: 1px dashed rgba(99, 102, 241, 0.2);
+            padding: 1rem;
+            border-radius: 6px;
+            color: #e0e7ff;
+            font-style: italic;
+        }
+
+        .callback-text {
+            background: rgba(168, 85, 247, 0.05);
+            border: 1px dashed rgba(168, 85, 247, 0.2);
+            padding: 1rem;
+            border-radius: 6px;
+            color: #f3e8ff;
+        }
+
+        /* Utility classes */
+        .highlight-orange {
+            color: #f59e0b;
+        }
+
+        .highlight-green {
+            color: #10b981;
+        }
+
+        .highlight-blue {
+            color: #3b82f6;
+        }
+
+        .highlight-pink {
+            color: #ec4899;
+        }
+
+        @media (max-width: 1024px) {
+            .sidebar {
+                width: 260px;
+            }
+
+            .main-content {
+                margin-left: 260px;
+                padding: 2.5rem 2rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .app-container {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: static;
+                border-right: none;
+                border-bottom: 1px solid var(--border-color);
+                padding: 1.5rem;
+            }
+
+            .main-content {
+                margin-left: 0;
+                padding: 2rem 1.5rem;
+            }
+
+            .header-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo-area">
+                <h2>UPSC Mains Essay</h2>
+                <div class="logo-sub">PhD Anecdote Library</div>
+            </div>
+
+            <div class="search-container">
+                <input type="text" id="searchInput" class="search-input" placeholder="Search values or topics...">
+            </div>
+
+            <nav class="nav-menu">
+                <div class="nav-section-title">UPSC 2025 PYQs</div>
+                <li class="nav-item"><a href="#2025-sec-a">Section A</a></li>
+                <li class="nav-item"><a href="#2025-sec-b">Section B</a></li>
+
+                <div class="nav-section-title">UPSC 2024 PYQs</div>
+                <li class="nav-item"><a href="#2024-sec-a">Section A</a></li>
+                <li class="nav-item"><a href="#2024-sec-b">Section B</a></li>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header>
+                <h1 class="header-title">Thematic Essay Anecdote Compendium</h1>
+                <p class="header-desc">
+                    High-scoring, academically rich micro-narratives tailored for UPSC Civil Services Mains Essay paper.
+                    Integrating World History, Indian History, Philosophers, and Bhakti-Sufi movements to build
+                    arresting hooks.
+                </p>
+            </header>
+
+            <!-- ==============================================
+             YEAR 2025
+             ============================================== -->
+            <section id="2025-sec-a" class="year-section search-item">
+                <div class="year-title">
+                    <span>UPSC Essay 2025 — Section A</span>
+                </div>
+
+                <!-- Q1 -->
+                <article class="anec-card search-target">
+                    <div class="card-header">
+                        <div class="card-number">Question 1</div>
+                        <h3 class="card-question">
+                            <span class="highlight-val">Truth knows no color</span>.
+                        </h3>
+                    </div>
+                    <div class="badge-container">
+                        <span class="badge bhakti-sufi">Bhakti Movement</span>
+                        <span class="badge philosophy">Epistemology</span>
+                        <span class="badge">Socio-Cultural</span>
+                    </div>
+                    <div class="story-section">
+                        <h4 class="story-title">
+                            <span class="highlight-pink">◆</span> The Shroud of Kabir
+                        </h4>
+                        <div class="story-content">
+                            <p>
+                                In the humid, dust-choked lanes of 15th-century Varanasi, the Bhakti mystic Kabir
+                                composed verses that cut clean through the sectarian divide of medieval India. To the
+                                Hindu orthodoxy, truth was colored in the saffron of rituals, caste hierarchies, and
+                                Sanskrit scriptures. To the Islamic clergy, truth was wrapped in the green of formal
+                                dogmas, Arabic texts, and institutionalized power. Kabir rejected both, declaring that
+                                the ultimate reality was an unpainted, formless presence—*Nirguna*.
+                            </p>
+                            <p>
+                                Upon Kabir's death in Maghar, a fierce dispute erupted. The Hindus demanded his body for
+                                cremation, claiming him as their guru; the Muslims insisted on burial, claiming him as
+                                their Sufi Pir. As the confrontation grew violent, someone drew back the white shroud
+                                covering his body. To their absolute bewilderment, the corpse had vanished. In its place
+                                lay a heap of fresh, fragrant flowers.
+                            </p>
+                            <p>
+                                Dumbfounded, the two groups divided the flowers. The Hindus cremated their share; the
+                                Muslims buried theirs. The colors of their rites remained different, but the entity they
+                                sought to possess had transitioned beyond both, proving that Truth belongs to no single
+                                faction.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="interactive-section">
+                        <button class="accordion-btn">Thematic Thesis Pivot</button>
+                        <div class="accordion-content">
+                            <p class="pivot-text">
+                                "Just as the flowers beneath Kabir's shroud dissolved the structural boundary between
+                                cremation and burial, objective truth remains independent of the ideological prism—be it
+                                political, cultural, or religious—through which humanity attempts to paint it."
+                            </p>
+                        </div>
+                    </div>
+                    <div class="interactive-section">
+                        <button class="accordion-btn">Concluding Callback Suggestion</button>
+                        <div class="accordion-content">
+                            <p class="callback-text">
+                                Conclude the essay by recalling the Maghar sanctuary, reminding the examiner that as we
+                                struggle with polarized echo chambers, our global salvation lies in seeking the "flowers
+                                under the shroud"—the objective, uncolored truths of human dignity and ecological
+                                survival.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Q2 -->
+                <article class="anec-card search-target">
+                    <div class="card-header">
+                        <div class="card-number">Question 2</div>
+                        <h3 class="card-question">
+                            The supreme art of war is to <span class="highlight-val">subdue the enemy without
+                                fighting</span>.
+                        </h3>
+                    </div>
+                    <div class="badge-container">
+                        <span class="badge history-india">Indian History</span>
+                        <span class="badge philosophy">Statecraft</span>
+                        <span class="badge">International Relations</span>
+                    </div>
+                    <div class="story-section">
+                        <h4 class="story-title">
+                            <span class="highlight-green">◆</span> Ashoka's Transition to Dhamma-Vijaya
+                        </h4>
+                        <div class="story-content">
+                            <p>
+                                In 261 BCE, the plains of Kalinga ran red with the blood of over a hundred thousand
+                                slain warriors. Standing amidst the carnage, the Mauryan Emperor Ashoka felt the hollow
+                                weight of *Sastra-vijaya*—victory achieved by the sword. He realized that while military
+                                might could annex territory, it left the minds of the survivors hostile and unyielding.
+                                The real enemy was not the Kalingan army, but the resentment and chaos of subjugation.
+                            </p>
+                            <p>
+                                Rather than deploying legions to suppress subsequent rebellions, Ashoka initiated an
+                                unprecedented structural pivot in statecraft. He formulated *Dhamma-vijaya* (conquest
+                                through righteousness). Instead of generals, he dispatched *Dhamma-mahamattas*
+                                (emissaries of peace), and sent his own children, Mahindra and Sanghamitra, to Sri Lanka
+                                armed not with bows, but with a sapling of the sacred Bodhi tree.
+                            </p>
+                            <p>
+                                Without marching a single battalion, Ashoka secured the spiritual and cultural
+                                allegiance of kingdoms across East and Southeast Asia. His influence outlasted the
+                                Mauryan empire by millennia, demonstrating Sun Tzu's timeless axiom that true victory
+                                lies in aligning minds, not breaking bodies.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="interactive-section">
+                        <button class="accordion-btn">Thematic Thesis Pivot</button>
+                        <div class="accordion-content">
+                            <p class="pivot-text">
+                                "Ashoka's transition from the bloodied fields of Kalinga to the moral diplomacy of
+                                Dhamma reveals that lasting security is never built upon physical subjugation, but on
+                                the systematic cultivation of shared values and mutual trust."
+                            </p>
+                        </div>
+                    </div>
+                    <div class="interactive-section">
+                        <button class="accordion-btn">Concluding Callback Suggestion</button>
+                        <div class="accordion-content">
+                            <p class="callback-text">
+                                Return to the contrast between Ashoka's sword and his stone edicts. Argue that in a
+                                thermonuclear age, where physical combat means mutual assured destruction, modern
+                                superpowers must master this supreme art by investing in soft power, multilateralism,
+                                and global ethical frameworks.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Q3 -->
+                <article class="anec-card search-target">
+                    <div class="card-header">
+                        <div class="card-number">Question 3</div>
+                        <h3 class="card-question">
+                            Thought <span class="highlight-val">finds a world and creates one also</span>.
+                        </h3>
+                    </div>
+                    <div class="badge-container">
+                        <span class="badge philosophy">Idealism</span>
+                        <span class="badge history-world">Science History</span>
+                        <span class="badge">Cognitive Science</span>
+                    </div>
+                    <div class="story-section">
+                        <h4 class="story-title">
+                            <span class="highlight-orange">◆</span> Ramanujan's Intuitive Mock Theta Functions
+                        </h4>
+                        <div class="story-content">
+                            <p>
+                                In the early 20th century, Srinivasa Ramanujan sat on the porch of his humble home in
+                                Kumbakonam, Tamil Nadu, armed only with a slate and red chalk. He lived in a world where
+                                formal mathematical proofs were the currency of credibility, a world he had not been
+                                formally trained to navigate. Yet, Ramanujan’s mind bypassed conventional logic. He
+                                claimed that the goddess Namagiri of Namakkal wrote complex mathematical equations on
+                                his tongue in dreams.
+                            </p>
+                            <p>
+                                Ramanujan did not just discover existing mathematical relations; his thoughts built
+                                entirely new paradigms. On his deathbed in 1920, with a failing body, he penned a letter
+                                to G.H. Hardy detailing what he called "Mock Theta Functions"—abstract mathematical
+                                constructs that did not fit into any known framework of his time.
+                            </p>
+                            <p>
+                                For nearly a century, these equations remained a mystery. It was only in the 2000s that
+                                physicists realized Ramanujan's mock theta functions are essential to calculating the
+                                entropy of black holes—cosmic phenomena that Ramanujan could not have observed. His mind
+                                found the abstract laws of numbers and, in doing so, created the framework to decode the
+                                deepest mysteries of the physical universe.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="interactive-section">
+                        <button class="accordion-btn">Thematic Thesis Pivot</button>
+                        <div class="accordion-content">
+                            <p class="pivot-text">
+                                "Ramanujan's scribbles on a simple slate demonstrate that human cognition is not a
+                                passive mirror reflecting the physical world, but an active forge that structures and
+                                materializes the reality of tomorrow."
+                            </p>
+                        </div>
+                    </div>
+                    <div class="interactive-section">
+                        <button class="accordion-btn">Concluding Callback Suggestion</button>
+                        <div class="accordion-content">
+                            <p class="callback-text">
+                                Bring the reader back to the image of Ramanujan's chalk dust on his slate. Suggest that
+                                our current challenges—climate change, AI governance—are waiting for shifts in human
+                                imagination to create new, sustainable socio-economic worlds.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Q4 -->
+                <article class="anec-card search-target">
+                    <div class="card-header">
+                        <div class="card-number">Question 4</div>
+                        <h3 class="card-question">
+                            Best lessons are learnt through <span class="highlight-val">bitter experiences</span>.
+                        </h3>
+                    </div>
+                    <div class="badge-container">
+                        <span class="badge history-world">World History</span>
+                        <span class="badge philosophy">Existentialism</span>
+                        <span class="badge">Resilience</span>
+                    </div>
+                    <div class="story-section">
+                        <h4 class="story-title">
+                            <span class="highlight-orange">◆</span> The Crucible of Gitanjali
+                        </h4>
+                        <div class="story-content">
+                            <p>
+                                Between 1902 and 1907, Rabindranath Tagore was pushed into a dark crucible of grief. In
+                                rapid succession, he lost his wife, Mrinalini Devi, his daughter, Renuka, and his
+                                youngest son, Shamindranath, who died of cholera at a tender age. The profound
+                                loneliness and raw pain of these bereavement years threatened to break his creative
+                                spirit.
+                            </p>
+                            <p>
+                                Instead of retreating into bitterness, Tagore channeled his grief into poetry. The songs
+                                of *Gitanjali* (Song Offerings) were born during this dark period. He transformed his
+                                deep personal sorrow into a universal quest for spiritual connection, translating the
+                                isolation of death into a deeper communion with the divine and the beauty of life.
+                            </p>
+                            <p>
+                                In 1913, *Gitanjali* won the Nobel Prize in Literature. It was not a product of
+                                intellectual comfort, but a wisdom refined by suffering. Tagore's bitterest losses
+                                taught him a profound empathy that resonated across the globe, illustrating that the
+                                human spirit learns its deepest truths not in the sunshine of prosperity, but in the
+                                shadows of adversity.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="interactive-section">
+                        <button class="accordion-btn">Thematic Thesis Pivot</button>
+                        <div class="accordion-content">
+                            <p class="pivot-text">
+                                "Tagore's transformation of intense bereavement into the transcendent verses of
+                                Gitanjali reveals that suffering, when processed through creative and reflective
+                                resilience, becomes the primary catalyst for civilizational and personal growth."
+                            </p>
+                        </div>
+                    </div>
+                    <div class="interactive-section">
+                        <button class="accordion-btn">Concluding Callback Suggestion</button>
+                        <div class="accordion-content">
+                            <p class="callback-text">
+                                Conclude by referencing Tagore's song of the soul rising above physical decay. Remind
+                                the reader that nations, like individuals, must use historical tragedies (such as
+                                colonialism or pandemics) as lessons to build robust social and institutional safety
+                                nets.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <section id="2025-sec-b" class="year-section search-item">
+                <div class="year-title">
+                    <span>UPSC Essay 2025 — Section B</span>
+                </div>
+
+                <!-- Q5 -->
+                <article class="anec-card search-target">
+                    <div class="card-header">
+                        <div class="card-number">Question 5</div>
+                        <h3 class="card-question">
+                            <span class="highlight-val">Muddy water is best cleared by leaving it alone</span>.
+                        </h3>
+                    </div>
+                    <div class="badge-container">
+                        <span class="badge philosophy">Eastern Philosophy</span>
+                        <span class="badge history-india">Administrative History</span>
+                        <span class="badge">Governance</span>
+                    </div>
+                    <div class="story-section">
+                        <h4 class="story-title">
+                            <span class="highlight-blue">◆</span> Lao Tzu and the Principle of Wu-Wei
+                        </h4>
+                        <div class="story-content">
+                            <p>
+                                In ancient China, during the chaotic Warring States period, the philosopher Lao Tzu
+                                observed rulers attempting to fix social decay through aggressive regulation, heavy
+                                taxes, and constant military interventions. He likened their hyperactive governance to a
+                                person trying to clear a muddy pool by stirring it with a stick—an action that only
+                                suspended the sediment further.
+                            </p>
+                            <p>
+                                Lao Tzu introduced the concept of *Wu-Wei* (effortless action or non-interference). To
+                                demonstrate this to his disciples, he told a story of a traveler who came across a
+                                stream churned up by a passing horse carriage. The disciple eagerly offered to step in
+                                and filter out the mud. Lao Tzu stopped him and said, "Wait." They sat in silence.
+                                Slowly, gravity pulled the mud down. The leaves settled. Within an hour, the water was
+                                crystal clear and fit to drink.
+                            </p>
+                            <p>
+                                In public policy, this is often seen in the contrast between over-regulation and letting
+                                organic markets or communities self-regulate. When the state over-intervenes in complex
+                                systems, it creates noise; sometimes, the wisest policy is to create the space for
+                                natural equilibrium to restore itself.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="interactive-section">
+                        <button class="accordion-btn">Thematic Thesis Pivot</button>
+                        <div class="accordion-content">
+                            <p class="pivot-text">
+                                "Lao Tzu’s muddy stream is a powerful warning against the modern administrative instinct
+                                of hyper-regulation, showing that in complex socio-economic systems, patient containment
+                                often succeeds where hasty intervention fails."
+                            </p>
+                        </div>
+                    </div>
+                    <div class="interactive-section">
+                        <button class="accordion-btn">Concluding Callback Suggestion</button>
+                        <div class="accordion-content">
+                            <p class="callback-text">
+                                Recall the image of the settling stream in the final paragraph. Emphasize that in times
+                                of crisis, leaders must balance active intervention with the calm patience of Wu-Wei,
+                                letting the sediment of panic settle before charting a long-term course.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Q6 -->
+                <article class="anec-card search-target">
+                    <div class="card-header">
+                        <div class="card-number">Question 6</div>
+                        <h3 class="card-question">
+                            The <span class="highlight-val">years teach much which the days never know</span>.
+                        </h3>
+                    </div>
+                    <div class="badge-container">
+                        <span class="badge philosophy">Historiography</span>
+                        <span class="badge history-world">World History</span>
+                        <span class="badge">Strategic Foresight</span>
+                    </div>
+                    <div class="story-section">
+                        <h4 class="story-title">
+                            <span class="highlight-orange">◆</span> Ibn Khaldun's Contemplative Isolation
+                        </h4>
+                        <div class="story-content">
+                            <p>
+                                In the 14th century, the scholar and diplomat Ibn Khaldun was caught in the volatile
+                                politics of North Africa. He watched dynasties rise, betrayals unfold, and kingdoms
+                                collapse in a matter of days. To someone living through those daily headlines, history
+                                seemed like a chaotic series of accidents, driven by the whims of individual rulers.
+                            </p>
+                            <p>
+                                Exiled and seeking refuge in the fortress of Qalat Ibn Salama in modern-day Algeria,
+                                Khaldun spent five years away from the active courts. Looking back over the decades of
+                                his life and centuries of Islamic history, he realized that the daily news was a
+                                distraction from long-term trends. He wrote the *Muqaddimah* (Introduction to History),
+                                where he identified the concept of *Asabiyyah*—the cyclical nature of social cohesion
+                                that determines the rise and fall of empires over generations.
+                            </p>
+                            <p>
+                                While the "days" of his political career were filled with temporary crises, the "years"
+                                of structured reflection revealed the hidden laws of sociology. This story highlights
+                                the importance of historical perspective over short-term reactionary thinking.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="interactive-section">
+                        <button class="accordion-btn">Thematic Thesis Pivot</button>
+                        <div class="accordion-content">
+                            <p class="pivot-text">
+                                "Ibn Khaldun's formulation of the cyclical laws of history shows that while daily events
+                                capture our immediate attention, it is only through long-term structural analysis that
+                                we can understand civilizational changes."
+                            </p>
+                        </div>
+                    </div>
+                    <div class="interactive-section">
+                        <button class="accordion-btn">Concluding Callback Suggestion</button>
+                        <div class="accordion-content">
+                            <p class="callback-text">
+                                Conclude by warning against the "tyranny of the immediate" in our modern digital
+                                landscape. Re-invoke Ibn Khaldun's silent fortress to argue that true statesmanship
+                                requires looking past daily media cycles to plan for the decades ahead.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Q7 -->
+                <article class="anec-card search-target">
+                    <div class="card-header">
+                        <div class="card-number">Question 7</div>
+                        <h3 class="card-question">
+                            It is best to see life as a <span class="highlight-val">journey, not as a
+                                destination</span>.
+                        </h3>
+                    </div>
+                    <div class="badge-container">
+                        <span class="badge history-india">Indian History</span>
+                        <span class="badge philosophy">Buddhist Philosophy</span>
+                        <span class="badge">Ethics</span>
+                    </div>
+                    <div class="story-section">
+                        <h4 class="story-title">
+                            <span class="highlight-green">◆</span> Xuanzang's Quest for the Scriptures
+                        </h4>
+                        <div class="story-content">
+                            <p>
+                                In 629 CE, the Chinese monk Xuanzang secretly left Chang'an, defying an imperial travel
+                                ban. His goal was Nalanda in India, where he hoped to acquire and translate original
+                                Sanskrit scriptures to resolve contradictions in Chinese Buddhist texts. To an outside
+                                observer, his destination was the library of Nalanda; his success would be measured
+                                solely by the cargo of scrolls he brought back.
+                            </p>
+                            <p>
+                                However, Xuanzang's journey became a transformative saga. For 17 years, he navigated the
+                                shifting sands of the Gobi Desert, scaled the frozen peaks of the Tian Shan, and
+                                survived capture by river bandits. Along the way, he learned local dialects, debated
+                                scholars, mediated disputes between kings, and developed a profound cross-cultural
+                                empathy.
+                            </p>
+                            <p>
+                                When he finally returned to China with hundreds of manuscripts, the Emperor offered him
+                                high political office. Xuanzang declined. He spent his remaining days in a modest pagoda
+                                translating the texts. The destination (Nalanda) was merely the canvas; it was the
+                                arduous journey that transformed him into an ambassador of cultural synthesis.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="interactive-section">
+                        <button class="accordion-btn">Thematic Thesis Pivot</button>
+                        <div class="accordion-content">
+                            <p class="pivot-text">
+                                "Xuanzang's historic journey demonstrates that the value of human ambition lies not in
+                                the final acquisition of a goal, but in the cognitive and ethical development forged
+                                along the way."
+                            </p>
+                        </div>
+                    </div>
+                    <div class="interactive-section">
+                        <button class="accordion-btn">Concluding Callback Suggestion</button>
+                        <div class="accordion-content">
+                            <p class="callback-text">
+                                Link Xuanzang's physical journey back to the contemporary pursuit of national
+                                development. Suggest that India's journey toward progress must prioritize democratic and
+                                ethical values over a narrow focus on GDP targets.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Q8 -->
+                <article class="anec-card search-target">
+                    <div class="card-header">
+                        <div class="card-number">Question 8</div>
+                        <h3 class="card-question">
+                            <span class="highlight-val">Contentment is natural wealth; luxury is artificial
+                                poverty</span>.
+                        </h3>
+                    </div>
+                    <div class="badge-container">
+                        <span class="badge philosophy">Classical Philosophy</span>
+                        <span class="badge history-world">Ancient History</span>
+                        <span class="badge">Ecological Ethics</span>
+                    </div>
+                    <div class="story-section">
+                        <h4 class="story-title">
+                            <span class="highlight-blue">◆</span> Diogenes and the Emperor's Sunlight
+                        </h4>
+                        <div class="story-content">
+                            <p>
+                                In the 4th century BCE, Alexander the Great, the ruler of Macedon, was at the height of
+                                his power. Having conquered Greece and prepared to march into Asia, he possessed wealth,
+                                military power, and imperial prestige. Yet, his ambitions left him restless; he was
+                                trapped in a cycle of wanting more territory—a state of artificial poverty where no
+                                amount of acquisition was enough.
+                            </p>
+                            <p>
+                                Curious to meet the philosopher Diogenes of Sinope, Alexander went to the Corinthian
+                                suburbs. He found Diogenes sunbathing near a wooden tub, which served as his only
+                                shelter. Diogenes possessed nothing but a cloak, a staff, and a wooden cup (which he
+                                threw away after seeing a child drink from their hands).
+                            </p>
+                            <p>
+                                Alexander, standing over him, asked, "Is there any favor I can grant you?"
+                                Diogenes replied, "Yes. Stand out of my sunlight."
+                                Alexander was struck by this response. While the emperor was burdened by the demands of
+                                his empire, the philosopher was content with the light of the sun. Alexander reportedly
+                                remarked to his officers, "If I were not Alexander, I would wish to be Diogenes."
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="interactive-section">
+                        <button class="accordion-btn">Thematic Thesis Pivot</button>
+                        <div class="accordion-content">
+                            <p class="pivot-text">
+                                "The exchange between Alexander and Diogenes highlights the contrast between the
+                                insatiable greed of artificial poverty and the freedom of self-determined contentment."
+                            </p>
+                        </div>
+                    </div>
+                    <div class="interactive-section">
+                        <button class="accordion-btn">Concluding Callback Suggestion</button>
+                        <div class="accordion-content">
+                            <p class="callback-text">
+                                Conclude the essay by contrasting modern consumerism with Diogenes' sunlight. Argue that
+                                to address climate change and resource depletion, we must shift our metrics of success
+                                from material consumption to sustainable contentment.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+
+            <!-- ==============================================
+             YEAR 2024
+             ============================================== -->
+            <section id="2024-sec-a" class="year-section search-item">
+                <div class="year-title">
+                    <span>UPSC Essay 2024 — Section A</span>
+                </div>
+
+                <!-- Q1 -->
+                <article class="anec-card search-target">
+                    <div class="card-header">
+                        <div class="card-number">Question 1</div>
+                        <h3 class="card-question">
+                            <span class="highlight-val">Forests precede civilizations and deserts follow them</span>.
+                        </h3>
+                    </div>
+                    <div class="badge-container">
+                        <span class="badge history-world">Environmental History</span>
+                        <span class="badge philosophy">Ecological Ethics</span>
+                        <span class="badge">Socio-Economic</span>
+                    </div>
+                    <div class="story-section">
+                        <h4 class="story-title">
+                            <span class="highlight-orange">◆</span> The Ecological Salinization of Sumer
+                        </h4>
+                        <div class="story-content">
+                            <p>
+                                Around 3000 BCE, the ancient Sumerians established the cradle of human civilization in
+                                the fertile floodplains between the Tigris and Euphrates rivers. Initially, the region
+                                was surrounded by wetlands and upstream forests in the Zagros mountains, which regulated
+                                the water flow and stabilized the soil. Civilization flourished, giving rise to writing,
+                                mathematics, and complex urban planning.
+                            </p>
+                            <p>
+                                To support their growing cities, the Sumerians cleared the upstream forests for timber
+                                and created massive canal networks to irrigate the arid lowlands. However, they lacked
+                                an understanding of drainage. The intensive irrigation in a hot climate raised the water
+                                table, bringing dissolved salts to the surface.
+                            </p>
+                            <p>
+                                Over centuries, the fertile soil became encrusted with salt, transforming it into a
+                                sterile desert. Wheat yields plummeted, leading to famine, political fragmentation, and
+                                the eventual collapse of the Sumerian kingdoms. What began as a land of agricultural
+                                abundance ended as a barren desert, illustrating the consequences of ignoring ecological
+                                limits.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="interactive-section">
+                        <button class="accordion-btn">Thematic Thesis Pivot</button>
+                        <div class="accordion-content">
+                            <p class="pivot-text">
+                                "The salinization of Sumer shows that when a civilization views nature merely as a
+                                resource to be exploited, it sets in motion the process of its own ecological collapse."
+                            </p>
+                        </div>
+                    </div>
+                    <div class="interactive-section">
+                        <button class="accordion-btn">Concluding Callback Suggestion</button>
+                        <div class="accordion-content">
+                            <p class="callback-text">
+                                Remind the reader that modern cities face similar risks. Re-invoke the salt-encrusted
+                                ruins of Sumer to urge a shift toward ecological restoration, green infrastructure, and
+                                sustainable agricultural practices.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Q2 -->
+                <article class="anec-card search-target">
+                    <div class="card-header">
+                        <div class="card-number">Question 2</div>
+                        <h3 class="card-question">
+                            The empires of the future will be the <span class="highlight-val">empires of the
+                                mind</span>.
+                        </h3>
+                    </div>
+                    <div class="badge-container">
+                        <span class="badge philosophy">Information Age</span>
+                        <span class="badge history-world">Knowledge History</span>
+                        <span class="badge">Technology</span>
+                    </div>
+                    <div class="story-section">
+                        <h4 class="story-title">
+                            <span class="highlight-orange">◆</span> The Survival of the House of Wisdom
+                        </h4>
+                        <div class="story-content">
+                            <p>
+                                In 1258 CE, the Mongol forces led by Hulagu Khan ransacked Baghdad, then the
+                                intellectual capital of the world. They targeted the *Bayt al-Hikmah* (House of Wisdom),
+                                throwing hundreds of thousands of scientific, philosophical, and mathematical
+                                manuscripts into the Tigris River. It was said the river ran black with the ink of books
+                                and red with the blood of scholars. The physical empire of the Abbasids was completely
+                                destroyed.
+                            </p>
+                            <p>
+                                However, the intellectual legacy survived. Scholars like Nasir al-Din al-Tusi had
+                                smuggled out key manuscripts before the siege, preserving them at the Maragheh
+                                Observatory. Over the next century, the Mongol conquerors themselves began to adopt the
+                                culture, science, and religion of the people they had defeated, eventually converting to
+                                Islam and patronizing learning.
+                            </p>
+                            <p>
+                                The physical conquest was temporary, but the intellectual empire of Baghdad outlived the
+                                Mongol military empire. In the modern era, this pattern is reinforced: true power is
+                                increasingly driven by knowledge, software, and cultural influence rather than physical
+                                territory.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="interactive-section">
+                        <button class="accordion-btn">Thematic Thesis Pivot</button>
+                        <div class="accordion-content">
+                            <p class="pivot-text">
+                                "The persistence of the House of Wisdom shows that physical conquest is temporary;
+                                lasting influence belongs to the ideas, innovations, and values that shape the human
+                                intellect."
+                            </p>
+                        </div>
+                    </div>
+                    <div class="interactive-section">
+                        <button class="accordion-btn">Concluding Callback Suggestion</button>
+                        <div class="accordion-content">
+                            <p class="callback-text">
+                                Conclude by arguing that India’s future strength lies not in territorial disputes, but
+                                in developing its human resources, fostering scientific research, and leveraging its
+                                democratic ideals as a source of global soft power.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Q3 -->
+                <article class="anec-card search-target">
+                    <div class="card-header">
+                        <div class="card-number">Question 3</div>
+                        <h3 class="card-question">
+                            There is no path to happiness; <span class="highlight-val">Happiness is the path</span>.
+                        </h3>
+                    </div>
+                    <div class="badge-container">
+                        <span class="badge philosophy">Zen Buddhism</span>
+                        <span class="badge history-india">Bhakti Philosophy</span>
+                        <span class="badge">Ethics & Well-being</span>
+                    </div>
+                    <div class="story-section">
+                        <h4 class="story-title">
+                            <span class="highlight-blue">◆</span> Shantideva's Silent Practice
+                        </h4>
+                        <div class="story-content">
+                            <p>
+                                In the 8th century, at the Buddhist university of Nalanda, a monk named Shantideva was
+                                regarded by his peers as a failure. They nicknamed him *Bhusuku*—one who only eats
+                                (*bhu*), sleeps (*su*), and walks (*ku*). The other monks, believing him to be lazy and
+                                unlearned, decided to humiliate him by demanding he deliver a public sermon to the
+                                entire assembly.
+                            </p>
+                            <p>
+                                Shantideva ascended the teaching throne and asked if they wanted to hear something old
+                                or something new. They requested something new. He then recited the *Bodhicaryavatara*
+                                (The Way of the Bodhisattva), a text on compassion and the nature of the mind. He
+                                explained that peace and joy are not rewards at the end of a long journey, but qualities
+                                to be cultivated in each moment of practice.
+                            </p>
+                            <p>
+                                As he reached the verses on the ultimate nature of reality, it is said Shantideva
+                                levitated into the air and vanished from sight, though his voice continued to echo
+                                through the hall. The monks realized that his seemingly quiet life was not a sign of
+                                laziness, but a continuous practice of mindfulness. He had integrated peace into his
+                                daily activities, showing that happiness is the method, not the destination.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="interactive-section">
+                        <button class="accordion-btn">Thematic Thesis Pivot</button>
+                        <div class="accordion-content">
+                            <p class="pivot-text">
+                                "Shantideva’s sermon reminds us that when we treat peace and contentment as goals to be
+                                achieved after reaching certain milestones, we miss the opportunity to practice them in
+                                the present."
+                            </p>
+                        </div>
+                    </div>
+                    <div class="interactive-section">
+                        <button class="accordion-btn">Concluding Callback Suggestion</button>
+                        <div class="accordion-content">
+                            <p class="callback-text">
+                                Encourage the reader to step off the treadmill of constant acquisition. Re-invoke
+                                Shantideva's sermon to argue for a lifestyle that prioritizes present-moment awareness,
+                                ethical clarity, and gratitude.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Q4 -->
+                <article class="anec-card search-target">
+                    <div class="card-header">
+                        <div class="card-number">Question 4</div>
+                        <h3 class="card-question">
+                            The <span class="highlight-val">doubter is a true man of science</span>.
+                        </h3>
+                    </div>
+                    <div class="badge-container">
+                        <span class="badge philosophy">Scientific Method</span>
+                        <span class="badge history-world">Islamic Golden Age</span>
+                        <span class="badge">Epistemology</span>
+                    </div>
+                    <div class="story-section">
+                        <h4 class="story-title">
+                            <span class="highlight-blue">◆</span> Alhazen and the Optics of Doubt
+                        </h4>
+                        <div class="story-content">
+                            <p>
+                                In 11th-century Cairo, the scholar Hasan Ibn al-Haytham (Alhazen) was placed under house
+                                arrest by the Caliph Al-Hakim after a project to regulate the Nile failed. Confined to a
+                                dark room for ten years, Alhazen turned his attention to the study of light. At the
+                                time, scientific thought was dominated by Ptolemy and Euclid's "emission theory," which
+                                claimed that the eyes project rays of light to perceive objects.
+                            </p>
+                            <p>
+                                Rather than accepting this established authority, Alhazen questioned it. He conducted
+                                systematic experiments using a darkened room with a small hole in one wall—a *camera
+                                obscura*—to demonstrate that light travels in straight lines from objects into the eye.
+                            </p>
+                            <p>
+                                His willingness to doubt accepted theories laid the foundation for the empirical
+                                scientific method. He wrote: "The seeker after the truth is not one who studies the
+                                writings of the ancients and, following his natural disposition, puts his trust in them,
+                                but rather the one who suspects his faith in them and questions his own understanding."
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="interactive-section">
+                        <button class="accordion-btn">Thematic Thesis Pivot</button>
+                        <div class="accordion-content">
+                            <p class="pivot-text">
+                                "Alhazen’s breakthrough in optics shows that scientific progress is driven not by the
+                                collection of facts, but by the willingness to question and test established
+                                assumptions."
+                            </p>
+                        </div>
+                    </div>
+                    <div class="interactive-section">
+                        <button class="accordion-btn">Concluding Callback Suggestion</button>
+                        <div class="accordion-content">
+                            <p class="callback-text">
+                                Conclude by emphasizing the importance of skepticism and critical thinking in an era of
+                                digital misinformation. Re-invoke Alhazen's dark room to argue that a healthy democracy
+                                requires citizens who ask for evidence rather than accepting dogmas.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <section id="2024-sec-b" class="year-section search-item">
+                <div class="year-title">
+                    <span>UPSC Essay 2024 — Section B</span>
+                </div>
+
+                <!-- Q5 -->
+                <article class="anec-card search-target">
+                    <div class="card-header">
+                        <div class="card-number">Question 5</div>
+                        <h3 class="card-question">
+                            Social media is triggering 'Fear of Missing Out' amongst the youth, precipitating <span
+                                class="highlight-val">depression and loneliness</span>.
+                        </h3>
+                    </div>
+                    <div class="badge-container">
+                        <span class="badge philosophy">Existential Philosophy</span>
+                        <span class="badge">Mental Health</span>
+                        <span class="badge">Technology Ethics</span>
+                    </div>
+                    <div class="story-section">
+                        <h4 class="story-title">
+                            <span class="highlight-blue">◆</span> Schopenhauer's Porcupine Dilemma
+                        </h4>
+                        <div class="story-content">
+                            <p>
+                                In his 1851 work *Parerga and Paralipomena*, the philosopher Arthur Schopenhauer
+                                presented a parable about a group of porcupines on a cold winter day. To protect
+                                themselves from the freezing cold, they huddled close together for warmth. However, as
+                                they drew nearer, their sharp quills began to prick one another, causing pain that
+                                forced them to separate.
+                            </p>
+                            <p>
+                                Cold and shivering, they huddled together again, only to experience the same discomfort.
+                                They repeated this cycle until they found a moderate distance that allowed them to stay
+                                warm without pricking each other.
+                            </p>
+                            <p>
+                                In the digital age, social media has disrupted this delicate balance. In our loneliness,
+                                we seek connection online, but the curated lifestyles we see can trigger comparison,
+                                anxiety, and a fear of missing out. The digital "huddle" can leave users feeling more
+                                isolated, highlighting the challenge of building meaningful connections online.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="interactive-section">
+                        <button class="accordion-btn">Thematic Thesis Pivot</button>
+                        <div class="accordion-content">
+                            <p class="pivot-text">
+                                "Schopenhauer’s porcupine dilemma highlights the challenge of modern hyper-connectivity:
+                                in our rush to avoid loneliness through digital platforms, we often expose ourselves to
+                                the anxiety of comparison."
+                            </p>
+                        </div>
+                    </div>
+                    <div class="interactive-section">
+                        <button class="accordion-btn">Concluding Callback Suggestion</button>
+                        <div class="accordion-content">
+                            <p class="callback-text">
+                                Suggest that the solution lies in finding a healthy digital distance. Re-invoke the
+                                porcupine metaphor to advocate for digital literacy, screen-time boundaries, and the
+                                cultivation of authentic, face-to-face community relationships.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Q6 -->
+                <article class="anec-card search-target">
+                    <div class="card-header">
+                        <div class="card-number">Question 6</div>
+                        <h3 class="card-question">
+                            Nearly all men can stand adversity, but to test the character, <span
+                                class="highlight-val">give him power</span>.
+                        </h3>
+                    </div>
+                    <div class="badge-container">
+                        <span class="badge history-world">Ancient History</span>
+                        <span class="badge philosophy">Political Theory</span>
+                        <span class="badge">Ethics & Leadership</span>
+                    </div>
+                    <div class="story-section">
+                        <h4 class="story-title">
+                            <span class="highlight-orange">◆</span> Cincinnatus and the Return to the Plow
+                        </h4>
+                        <div class="story-content">
+                            <p>
+                                In 458 BCE, the Roman Republic faced an invasion by the Aequi and Sabines, threatening
+                                the city with defeat. In panic, the Senate turned to Lucius Quinctius Cincinnatus, a
+                                respected former consul who had retired to work on his small farm along the Tiber River.
+                                The Senate appointed him Dictator, granting him absolute military and political
+                                authority over Rome.
+                            </p>
+                            <p>
+                                Cincinnatus left his plow, assumed command, mobilized the army, and defeated the
+                                invading forces in a campaign lasting fifteen days. With the crisis resolved and the
+                                city safe, Cincinnatus possessed the authority to remain dictator for six months.
+                            </p>
+                            <p>
+                                Instead, he immediately resigned his commission, gave up absolute power, and returned to
+                                his farm to resume plowing his fields. By choosing his farm over the opportunity to
+                                rule, Cincinnatus demonstrated that true character is revealed by how one handles the
+                                acquisition of power.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="interactive-section">
+                        <button class="accordion-btn">Thematic Thesis Pivot</button>
+                        <div class="accordion-content">
+                            <p class="pivot-text">
+                                "Cincinnatus’s resignation of absolute power shows that the true test of leadership lies
+                                not in the ability to acquire authority during a crisis, but in the restraint to step
+                                down when the task is done."
+                            </p>
+                        </div>
+                    </div>
+                    <div class="interactive-section">
+                        <button class="accordion-btn">Concluding Callback Suggestion</button>
+                        <div class="accordion-content">
+                            <p class="callback-text">
+                                Contrast Cincinnatus with modern leaders who seek to extend their terms. Re-invoke the
+                                image of his abandoned plow to advocate for institutional checks, constitutional
+                                morality, and the value of selfless public service.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Q7 -->
+                <article class="anec-card search-target">
+                    <div class="card-header">
+                        <div class="card-number">Question 7</div>
+                        <h3 class="card-question">
+                            All ideas having large consequences are <span class="highlight-val">always simple</span>.
+                        </h3>
+                    </div>
+                    <div class="badge-container">
+                        <span class="badge history-india">Indian History</span>
+                        <span class="badge philosophy">Political Economy</span>
+                        <span class="badge">Social Movements</span>
+                    </div>
+                    <div class="story-section">
+                        <h4 class="story-title">
+                            <span class="highlight-green">◆</span> Gandhi and the Pinch of Salt
+                        </h4>
+                        <div class="story-content">
+                            <p>
+                                In early 1930, as the Indian National Congress sought a way to challenge British
+                                colonial rule, Mahatma Gandhi proposed a march to the sea to protest the salt tax. Many
+                                political colleagues were skeptical, questioning how a basic commodity like salt could
+                                serve as the focal point for a national independence movement.
+                            </p>
+                            <p>
+                                Gandhi recognized that salt was a daily necessity for every Indian, regardless of
+                                religion, caste, or class. On March 12, 1930, he walked 240 miles from Sabarmati Ashram
+                                to the coast of Dandi. On April 6, he bent down and picked up a handful of natural salt
+                                from the shore, violating the colonial monopoly.
+                            </p>
+                            <p>
+                                This simple gesture resonated across the country, inspiring millions of citizens to
+                                manufacture salt and boycott British goods. The protest challenged the moral authority
+                                of the colonial administration, showing how a simple idea can mobilize a nation.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="interactive-section">
+                        <button class="accordion-btn">Thematic Thesis Pivot</button>
+                        <div class="accordion-content">
+                            <p class="pivot-text">
+                                "Gandhi’s pick of salt shows that the most effective political ideas are often simple,
+                                relying on universal human needs to unite diverse populations."
+                            </p>
+                        </div>
+                    </div>
+                    <div class="interactive-section">
+                        <button class="accordion-btn">Concluding Callback Suggestion</button>
+                        <div class="accordion-content">
+                            <p class="callback-text">
+                                Use the Dandi March to remind the reader that addressing complex modern issues requires
+                                finding simple, relatable core values—like fairness, clean air, and community dignity—to
+                                build consensus.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Q8 -->
+                <article class="anec-card search-target">
+                    <div class="card-header">
+                        <div class="card-number">Question 8</div>
+                        <h3 class="card-question">
+                            The cost of being wrong is <span class="highlight-val">less than the cost of doing
+                                nothing</span>.
+                        </h3>
+                    </div>
+                    <div class="badge-container">
+                        <span class="badge history-world">Cold War History</span>
+                        <span class="badge philosophy">Crisis Management</span>
+                        <span class="badge">Administrative Decision-Making</span>
+                    </div>
+                    <div class="story-section">
+                        <h4 class="story-title">
+                            <span class="highlight-orange">◆</span> The Decision of Stanislav Petrov
+                        </h4>
+                        <div class="story-content">
+                            <p>
+                                On September 26, 1983, Lt. Col. Stanislav Petrov was the officer on duty at the
+                                Serpukhov-15 bunker near Moscow, which monitored the Soviet Union's early-warning
+                                satellites. Shortly after midnight, the bunker's alarms sounded, indicating that the
+                                United States had launched five Minuteman intercontinental ballistic missiles.
+                            </p>
+                            <p>
+                                Soviet military protocol required Petrov to report the warning immediately to his
+                                superiors, which would likely have triggered a retaliatory nuclear strike. However,
+                                Petrov questioned the data, noting that the system was new and that a real first strike
+                                would involve hundreds of missiles, not just five.
+                            </p>
+                            <p>
+                                Petrov decided to treat the alarm as a system malfunction, choosing to wait for
+                                confirmation rather than initiating a response. If he was wrong, the Soviet Union faced
+                                destruction; if he did nothing to retaliate, he risked failing his duty. His decision to
+                                pause and verify proved correct, as the warning was later identified as a solar
+                                reflection off high-altitude clouds, preventing a potential nuclear conflict.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="interactive-section">
+                        <button class="accordion-btn">Thematic Thesis Pivot</button>
+                        <div class="accordion-content">
+                            <p class="pivot-text">
+                                "Petrov's decision shows that in high-stakes situations, a thoughtful pause and
+                                willingness to verify information can be more effective than executing protocol without
+                                question."
+                            </p>
+                        </div>
+                    </div>
+                    <div class="interactive-section">
+                        <button class="accordion-btn">Concluding Callback Suggestion</button>
+                        <div class="accordion-content">
+                            <p class="callback-text">
+                                Conclude by arguing that modern administration faces similar challenges. Re-invoke
+                                Petrov's decision to show that leadership requires the judgment to evaluate information
+                                under pressure rather than relying solely on automated systems.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        // Search Functionality
+        const searchInput = document.getElementById('searchInput');
+        const targets = document.querySelectorAll('.search-target');
+
+        searchInput.addEventListener('input', (e) => {
+            const query = e.target.value.toLowerCase();
+            targets.forEach(target => {
+                const text = target.innerText.toLowerCase();
+                if (text.includes(query)) {
+                    target.style.display = 'block';
+                } else {
+                    target.style.display = 'none';
+                }
+            });
+        });
+
+        // Accordion Functionality
+        const accordionBtns = document.querySelectorAll('.accordion-btn');
+
+        accordionBtns.forEach(btn => {
+            btn.addEventListener('click', function () {
+                this.classList.toggle('open');
+                const content = this.nextElementSibling;
+                if (content.classList.contains('show')) {
+                    content.classList.remove('show');
+                    content.style.maxHeight = null;
+                } else {
+                    content.classList.add('show');
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
